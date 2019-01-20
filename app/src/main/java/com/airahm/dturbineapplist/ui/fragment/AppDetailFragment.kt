@@ -23,13 +23,17 @@ class AppDetailFragment : Fragment() {
     }
 
     var mAct: MainActivity? = null
+    var mAppId : String = ""
 
     var ob = Observer<AppDetail> {
         it?.run {
             txvTitle.text = productName
+            ratingDraweeView.setImageURI(averageRatingImageURL)
             txvCategory.text = categoryName
             txvRating.text = rating
-
+            appThumbnailDraweeView.setImageURI(productThumbnail)
+            txvProductId.text = productId.toString()
+            txvDetails.text = productDescription
         }
     }
 
@@ -40,7 +44,7 @@ class AppDetailFragment : Fragment() {
 
     override fun onCreate(b: Bundle?) {
         super.onCreate(b)
-        Log.d(TAG, "onCreate")
+        mAppId = arguments?.getString(AppConstants.APP_ID) ?: ""
         postponeEnterTransition()
         sharedElementEnterTransition = TransitionInflater
             .from(activity).inflateTransition(R.transition.app_thumbnail)
@@ -60,7 +64,8 @@ class AppDetailFragment : Fragment() {
         txvDetails.typeface = t
         txvRating.typeface = t
         txvCategory.typeface = t
-        txvRating.typeface = t
+        txvProductId.typeface = t
+        txvProductId.typeface = t
 
         imvClose.setOnClickListener {
             mAct?.run {
@@ -71,6 +76,7 @@ class AppDetailFragment : Fragment() {
         }
 
         mAct?.run {
+            vmDetail.update(mAppId)
             vmDetail.appDetail?.observe(this, ob)
         }
     }

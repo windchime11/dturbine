@@ -19,7 +19,6 @@ class WebDataService : JobIntentService() {
 
     override fun onHandleWork(p0: Intent) {
         val mRepo = MainRepo(application)
-        var result = ""
         val xmlString = URL(AppConstants.URL).readText()
         val xmlToJson = XmlToJson.Builder(xmlString).build()
         val jsonObjectStr = xmlToJson.toJson().toString()

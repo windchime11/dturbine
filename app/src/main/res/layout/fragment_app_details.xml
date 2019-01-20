@@ -36,7 +36,7 @@
         </RelativeLayout>
     </RelativeLayout>
 
-    <RelativeLayout
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -53,10 +53,10 @@
                 android:layout_marginTop="25dp">
             <com.facebook.drawee.view.SimpleDraweeView
                     android:id="@+id/ratingDraweeView"
-                    android:layout_height="match_parent"
+                    android:layout_height="30dp"
                     android:layout_width="match_parent"
                     android:layout_margin="0dp"
-                    fresco:actualImageScaleType="centerCrop"/>
+                    fresco:actualImageScaleType="centerInside"/>
             <TextView
                     android:id="@+id/txvTitle"
                     android:layout_width="match_parent"
@@ -82,8 +82,8 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:text="-"
-                    android:textSize="19sp"
-                    android:textColor="@color/colorGreen_20"/>
+                    android:textSize="14sp"
+                    android:textColor="@color/colorCyan_50"/>
             <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="32dp"
@@ -116,5 +116,5 @@
                     android:textSize="15sp"
                     android:textColor="@color/colorGray_90"/>
         </LinearLayout>
-    </RelativeLayout>
+    </LinearLayout>
 </LinearLayout>
