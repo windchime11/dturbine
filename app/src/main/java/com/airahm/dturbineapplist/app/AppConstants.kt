@@ -35,7 +35,7 @@ class AppConstants {
         const val MAIN_DB_NAME = "digital_turbine_challenge_db"
 
         //ui
-        const val FONT_PATH = "fonts/AvenirNextRoundedPro-Reg.otf"
+        const val FONT_PATH = "AvenirNextRoundedPro-Reg.otf"
         const val TRANS_SUFFIX = "_transition"
         const val INITIAL_OFFSET = 160
         const val CANVAS_WIDTH_TOTAL_UNIT = 4
