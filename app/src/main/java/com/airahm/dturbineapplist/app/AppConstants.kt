@@ -33,5 +33,13 @@ class AppConstants {
         //db related
         const val APP_LIST_TABLE_NAME = "app_list_table"
         const val MAIN_DB_NAME = "digital_turbine_challenge_db"
+
+        //ui
+        const val FONT_PATH = "fonts/AvenirNextRoundedPro-Reg.otf"
+        const val TRANS_SUFFIX = "_transition"
+
+        //logging
+        const val LOG_PREFIX = "DigTurb_"
+        const val LOG_PREFIX_LENGTH = LOG_PREFIX.length
     }
 }
