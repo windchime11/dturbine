@@ -21,8 +21,8 @@ import org.koin.android.viewmodel.ext.android.viewModel
 
 class MainActivity : BaseActivity(), AppListAdapter.AppItemClickListener {
 
-    val viewModel: AppListViewModel by viewModel()
-    val viewModel2: AppDetailViewModel by viewModel()
+    val vmList: AppListViewModel by viewModel()
+    val vmDetail: AppDetailViewModel by viewModel()
     val service: WebDataService by inject()
 
     override fun onCreate(savedInstanceState: Bundle?) {

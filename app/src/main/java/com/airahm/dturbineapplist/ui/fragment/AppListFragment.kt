@@ -68,7 +68,7 @@ class AppListFragment : Fragment() {
         }
 
         mAct?.run {
-            viewModel.appList?.observe(this, ob)
+            vmList.appList?.observe(this, ob)
         }
     }
 
@@ -76,7 +76,7 @@ class AppListFragment : Fragment() {
         super.onDestroyView()
         Log.d(TAG, "onDestroyView")
         mAct?.run {
-            viewModel.appList?.removeObserver(ob)
+            vmList.appList?.removeObserver(ob)
         }
         mAdapter = null
     }

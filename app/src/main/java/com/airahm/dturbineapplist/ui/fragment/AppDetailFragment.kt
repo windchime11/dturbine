@@ -59,6 +59,8 @@ class AppDetailFragment : Fragment() {
         txvTitle.typeface = t
         txvDetails.typeface = t
         txvRating.typeface = t
+        txvCategory.typeface = t
+        txvRating.typeface = t
 
         imvClose.setOnClickListener {
             mAct?.run {
@@ -69,7 +71,7 @@ class AppDetailFragment : Fragment() {
         }
 
         mAct?.run {
-            viewModel2.appDetail?.observe(this, ob)
+            vmDetail.appDetail?.observe(this, ob)
         }
     }
 
@@ -77,7 +79,7 @@ class AppDetailFragment : Fragment() {
         super.onDestroyView()
         Log.d(TAG, "onDestroyView")
         mAct?.run {
-            viewModel2.appDetail?.removeObserver(ob)
+            vmDetail.appDetail?.removeObserver(ob)
         }
     }
 }
