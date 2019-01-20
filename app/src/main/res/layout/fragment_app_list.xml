@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:background="@color/colorWhite">
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"/>
+        <TextView
+                android:id="@+id/titleTxv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorGray_90"
+                android:gravity="center"
+                android:background="@color/colorWhitealpha"
+                android:layout_alignParentTop="true"
+                android:text="apps" />
+</RelativeLayout>

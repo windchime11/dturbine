@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#FDFDFD</color>
+    <color name="colorWhitealpha">#DDFDFDFD</color>
+    <color name="colorPrimary">#F3F3F3</color>
+    <color name="colorGrey_30">#E3E3E3</color>
+    <color name="colorGray_40">#d1d1d1</color>
+    <color name="colorGray_50">#cacaca</color>
+    <color name="colorPrimaryDark">#50D1A9</color>
+    <color name="colorAccent">#00A074</color>
+    <color name="colorGray_90">#9E9E9E</color>
+    <color name="colorGray_100">#707070</color>
+    <color name="colorGray_20">#F3F3F3</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorGreen_20">#50D1A9</color> <!--80, 209, 169-->
+    <color name="colorYellow_50">#ffa000</color>  <!--255, 209, 85-->
+    <color name="color_yellow">#ccFFFF00</color>  <!--255, 209, 85-->
+    <color name="colorCyan_50">#29B6F6</color>  <!--41, 182, 246-->
+    <color name="colorCyan_50_alpha_cc">#cc29B6F6</color>  <!--41, 182, 246-->
+    <color name="radio_button_selected_color">#ff33b5e5</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+    <color name="radio_stroke_color">#4A90E2</color>
+    <color name="color_light_blue">#47b7df</color>
+    <color name="color_light_blue1">#DD47b7df</color>
 </resources>

@@ -37,6 +37,11 @@ class AppConstants {
         //ui
         const val FONT_PATH = "fonts/AvenirNextRoundedPro-Reg.otf"
         const val TRANS_SUFFIX = "_transition"
+        const val INITIAL_OFFSET = 160
+        const val CANVAS_WIDTH_TOTAL_UNIT = 4
+        const val SMALL_WIDTH = 2
+        const val SMALL_WIDTH_FONT_SIZE = 14.0F
+        const val LARGER_WIDTH_FONT_SIZE = 18.0F
 
         //logging
         const val LOG_PREFIX = "DigTurb_"
