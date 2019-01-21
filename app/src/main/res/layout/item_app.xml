@@ -36,7 +36,7 @@
                     android:id="@+id/appInfoLyt"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
@@ -44,25 +44,35 @@
                 <TextView
                         android:id="@+id/appNameTxv"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
+                        android:layout_weight="2"
                         android:textColor="@color/colorGray_100"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:gravity="center"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginBottom="2dp"
                         android:textSize="18sp"
-                        android:text="Top Gun"/>
+                        android:text="Gummy Drop!"/>
                 <TextView
                         android:id="@+id/appRatingTxv"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:textColor="@color/colorGray_50"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
+                        android:textColor="@color/colorGray_90"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|right"
+                        android:layout_marginRight="3dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
                         android:textSize="16sp"
                         android:text="--"/>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:tint="@color/colorGray_90"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/star_black"/>
             </LinearLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>
