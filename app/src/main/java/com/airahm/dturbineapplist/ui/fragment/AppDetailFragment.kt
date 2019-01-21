@@ -29,10 +29,14 @@ class AppDetailFragment : Fragment() {
         it?.run {
             txvTitle.text = productName
             ratingDraweeView.setImageURI(averageRatingImageURL)
+
+            txvIsRandomPick.text =  "random pick? " + if(isRandomPick) "yes" else "no"
+            txvProductId.text = productId.toString()
+            txvCampaignId.text = campaignId.toString()
             txvCategory.text = categoryName
             txvRating.text = rating
+            txvHomeScreen.text =  "home screen? " + if(homeScreen) "yes" else "no"
             appThumbnailDraweeView.setImageURI(productThumbnail)
-            txvProductId.text = productId.toString()
             txvDetails.text = productDescription
         }
     }
@@ -83,7 +87,6 @@ class AppDetailFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        Log.d(TAG, "onDestroyView")
         mAct?.run {
             vmDetail.appDetail?.removeObserver(ob)
         }
