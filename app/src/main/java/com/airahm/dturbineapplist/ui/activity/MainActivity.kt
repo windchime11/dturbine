@@ -28,7 +28,6 @@ class MainActivity : BaseActivity(), AppListAdapter.AppItemClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Fresco.initialize(this)
 
         val fm = supportFragmentManager
         val fg = AppListFragment()
