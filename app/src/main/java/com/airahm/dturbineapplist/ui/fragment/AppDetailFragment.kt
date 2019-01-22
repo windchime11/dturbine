@@ -26,17 +26,31 @@ class AppDetailFragment : Fragment() {
 
     var ob = Observer<AppDetail> {
         it?.run {
-            txvTitle.text = productName
-            ratingDraweeView.setImageURI(averageRatingImageURL)
 
-            txvIsRandomPick.text =  "random pick? " + if(isRandomPick) "yes" else "no"
+            appThumbnailDraweeView.setImageURI(productThumbnail)
+
+            ratingDraweeView.setImageURI(averageRatingImageURL)
+            txvAvgRatingImgUrl.text = averageRatingImageURL
+            txvClickProxyUrl.text = clickProxyURL
+            txvImpressionTrackingUrl.text = impressionTrackingURL
+            txvProductName.text = productName
+            txvCategory.text = categoryName
+
             txvProductId.text = productId.toString()
             txvCampaignId.text = campaignId.toString()
-            txvCategory.text = categoryName
+            txvCampaignTypeId.text = campaignTypeId.toString()
+            txvCreativeId.text = creativeId
+            txvBillingTypeId.text = billingTypeId.toString()
+
+            txvCampaignDisplayOrder.text = campaignDisplayOrder.toString()
+            txvIsRandomPick.text =  if(isRandomPick) "true" else "false"
+            txvHomeScreen.text = if(homeScreen) "true" else "false"
             txvRating.text = rating
-            txvHomeScreen.text =  "home screen? " + if(homeScreen) "yes" else "no"
-            appThumbnailDraweeView.setImageURI(productThumbnail)
             txvDetails.text = productDescription
+
+            txvNumberOfRatings.text = numberOfRatings.toString()
+            txvBidRate.text = bidRate.toString()
+            txvCallToAction.text = callToAction
         }
     }
 
@@ -60,10 +74,31 @@ class AppDetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val name = arguments?.getString(AppConstants.PRODUCT_NAME)
         appThumbnailDraweeView.transitionName = name
-        txvTitle.transitionName = name + AppConstants.TRANS_SUFFIX
+        txvProductName.transitionName = name + AppConstants.TRANS_SUFFIX
         val act = activity as MainActivity
         val t = act.mTypefaceThin
-        txvTitle.typeface = t
+        txvAvgRatingImgUrl.typeface = t
+        txvClickProxyUrl.typeface = t
+        txvImpressionTrackingUrl.typeface = t
+        txvProductName.typeface = t
+        txvCategory.typeface = t
+
+        txvProductId.typeface = t
+        txvCampaignId.typeface = t
+        txvCampaignTypeId.typeface = t
+        txvCreativeId.typeface = t
+        txvBillingTypeId.typeface = t
+
+        txvCampaignDisplayOrder.typeface = t
+        txvIsRandomPick.typeface = t
+        txvHomeScreen.typeface = t
+        txvRating.typeface = t
+        txvDetails.typeface = t
+
+        txvNumberOfRatings.typeface = t
+        txvBidRate.typeface = t
+        txvCallToAction.typeface = t
+        txvProductName.typeface = t
         txvDetails.typeface = t
         txvRating.typeface = t
         txvCategory.typeface = t

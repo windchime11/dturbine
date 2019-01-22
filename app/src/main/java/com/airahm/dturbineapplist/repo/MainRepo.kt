@@ -16,13 +16,16 @@ class MainRepo (db: DTurbineRoomDb) {
     val mAppDetail: MutableLiveData<AppDetail>? = MutableLiveData<AppDetail>()
 
     init {
-        mAppListDao = db?.getAppListDao()
-        mAppList = mAppListDao?.getOnlyData()
+        mAppListDao = db.getAppListDao()
+        mAppList = mAppListDao.getOnlyData()
     }
 
+    fun clearAppList() {
+        mAppListDao?.deleteAll()
+    }
 
     fun updateAppList(s: String) {
-        mAppListDao?.deleteAll()
+        clearAppList()
         mAppListDao?.insert(AppListData("json", System.currentTimeMillis(), s))
     }
 
