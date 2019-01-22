@@ -2,7 +2,6 @@ package com.airahm.dturbineapplist.repo
 
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
-import android.content.Context
 import com.airahm.dturbineapplist.db.dao.AppListDao
 import com.airahm.dturbineapplist.db.db.DTurbineRoomDb
 import com.airahm.dturbineapplist.db.model.AppListData
@@ -10,14 +9,13 @@ import com.airahm.dturbineapplist.model.AppDetail
 import com.airahm.dturbineapplist.utils.JsonUtils
 import org.json.JSONObject
 
-class MainRepo (c: Context) {
+class MainRepo (db: DTurbineRoomDb) {
 
     val mAppListDao: AppListDao?
     val mAppList: LiveData<List<AppListData>>?
     val mAppDetail: MutableLiveData<AppDetail>? = MutableLiveData<AppDetail>()
 
     init {
-        val db = DTurbineRoomDb.getDatabase(c)
         mAppListDao = db?.getAppListDao()
         mAppList = mAppListDao?.getOnlyData()
     }

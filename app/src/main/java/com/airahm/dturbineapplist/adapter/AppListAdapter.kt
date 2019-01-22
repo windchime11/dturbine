@@ -15,9 +15,10 @@ import com.airahm.dturbineapplist.model.AppDetail
 import com.facebook.drawee.view.SimpleDraweeView
 import kotlinx.android.synthetic.main.item_app.view.*
 
-class AppListAdapter (act: Context) : RecyclerView.Adapter<AppListAdapter.AppItemViewHolder>() {
+class AppListAdapter (ctxt: Context) : RecyclerView.Adapter<AppListAdapter.AppItemViewHolder>() {
 
-    var mThin: Typeface? = Typeface.createFromAsset(act.assets, AppConstants.FONT_PATH)
+    val mWthList = mutableListOf<AppDetail>()
+    val mThin: Typeface? = Typeface.createFromAsset(ctxt.assets, AppConstants.FONT_PATH)
     var mClickListener: AppItemClickListener? = null
     var parentWidth = 0
 
@@ -51,10 +52,9 @@ class AppListAdapter (act: Context) : RecyclerView.Adapter<AppListAdapter.AppIte
         if (parentWidth == 0) {
             parentWidth = parent.measuredWidth ?: 0
         }
-        return AppItemViewHolder(this, parent.context, v, mThin)
+        return AppItemViewHolder(this, v, mThin)
     }
 
-    val mWthList = mutableListOf<AppDetail>()
 
     fun update(ws: List<AppDetail>) {
         mWthList.clear()
@@ -68,7 +68,7 @@ class AppListAdapter (act: Context) : RecyclerView.Adapter<AppListAdapter.AppIte
         return mWthList.size
     }
 
-    class AppItemViewHolder(val m: AppListAdapter, val c: Context, val item: View, private val t: Typeface?) :
+    class AppItemViewHolder(val m: AppListAdapter, val item: View, private val t: Typeface?) :
         RecyclerView.ViewHolder(item) {
 
         fun refresh(w: AppDetail) {
