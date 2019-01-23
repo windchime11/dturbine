@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.item_app.view.*
 
 class AppListAdapter (ctxt: Context) : RecyclerView.Adapter<AppListAdapter.AppItemViewHolder>() {
 
-    val mWthList = mutableListOf<AppDetail>()
+    val mApdList = mutableListOf<AppDetail>()
     val mThin: Typeface? = Typeface.createFromAsset(ctxt.assets, AppConstants.FONT_PATH)
     var mClickListener: AppItemClickListener? = null
     var parentWidth = 0
@@ -31,7 +31,7 @@ class AppListAdapter (ctxt: Context) : RecyclerView.Adapter<AppListAdapter.AppIt
     }
 
     override fun onBindViewHolder(holder: AppItemViewHolder, position: Int) {
-        val itm = mWthList.get(position)
+        val itm = mApdList.get(position)
         ViewCompat.setTransitionName(holder.item.itemDraweeView, itm.productName)
         ViewCompat.setTransitionName(holder.item.appNameTxv, itm.productName + AppConstants.TRANS_SUFFIX)
         val itemHeight = itm.height * parentWidth / AppConstants.CANVAS_WIDTH_TOTAL_UNIT
@@ -57,15 +57,15 @@ class AppListAdapter (ctxt: Context) : RecyclerView.Adapter<AppListAdapter.AppIt
 
 
     fun update(ws: List<AppDetail>) {
-        mWthList.clear()
+        mApdList.clear()
         for (w in ws) {
-            mWthList.add(w)
+            mApdList.add(w)
         }
         notifyDataSetChanged()
     }
 
     override fun getItemCount(): Int {
-        return mWthList.size
+        return mApdList.size
     }
 
     class AppItemViewHolder(val m: AppListAdapter, val item: View, private val t: Typeface?) :

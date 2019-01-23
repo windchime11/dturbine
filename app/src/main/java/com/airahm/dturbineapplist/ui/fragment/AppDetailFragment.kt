@@ -138,15 +138,15 @@ class AppDetailFragment : Fragment() {
         }
 
         mAct?.run {
-            vmDetail.update(mAppId)
-            vmDetail.appDetail?.observe(this, ob)
+            mVmDetail.update(mAppId)
+            mVmDetail.appDetail?.observe(this, ob)
         }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         mAct?.run {
-            vmDetail.appDetail?.removeObserver(ob)
+            mVmDetail.appDetail?.removeObserver(ob)
         }
     }
 }

@@ -20,12 +20,8 @@ class MainRepo (db: DTurbineRoomDb) {
         mAppList = mAppListDao.getOnlyData()
     }
 
-    fun clearAppList() {
-        mAppListDao?.deleteAll()
-    }
-
     fun updateAppList(s: String) {
-        clearAppList()
+        mAppListDao?.deleteAll()
         mAppListDao?.insert(AppListData("json", System.currentTimeMillis(), s))
     }
 

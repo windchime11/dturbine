@@ -48,7 +48,7 @@ class AppListViewModelTest : KoinTest {
         viewModel.appList?.observeForever(appListData)
         appListData.onChanged(list)
         Assert.assertNotNull(viewModel.appList)
-        Assert.assertNotNull(viewModel.r)
+        Assert.assertNotNull(viewModel.repo)
         Mockito.verify(appListData).onChanged(list)
     }
 }

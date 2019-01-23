@@ -14,16 +14,15 @@ import com.airahm.dturbineapplist.ui.fragment.AppDetailFragment
 import com.airahm.dturbineapplist.ui.fragment.AppListFragment
 import com.airahm.dturbineapplist.viewmodel.AppDetailViewModel
 import com.airahm.dturbineapplist.viewmodel.AppListViewModel
-import com.facebook.drawee.backends.pipeline.Fresco
 import com.facebook.drawee.view.SimpleDraweeView
 import org.koin.android.ext.android.inject
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class MainActivity : BaseActivity(), AppListAdapter.AppItemClickListener {
 
-    val vmList: AppListViewModel by viewModel()
-    val vmDetail: AppDetailViewModel by viewModel()
-    val service: WebDataService by inject()
+    val mVmList: AppListViewModel by viewModel()
+    val mVmDetail: AppDetailViewModel by viewModel()
+    val mService: WebDataService by inject()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,7 +34,7 @@ class MainActivity : BaseActivity(), AppListAdapter.AppItemClickListener {
             .replace(R.id.frag_container, fg).commit()
         fm.executePendingTransactions()
 
-        service.enqueueWork(this, Intent())
+        mService.enqueueWork(this, Intent())
     }
 
     override fun onItemClick(m: AppDetail, v: SimpleDraweeView, v2: TextView) {
