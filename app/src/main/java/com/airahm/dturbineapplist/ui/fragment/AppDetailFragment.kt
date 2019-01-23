@@ -49,7 +49,7 @@ class AppDetailFragment : Fragment() {
             txvDetails.text = productDescription
 
             txvNumberOfRatings.text = numberOfRatings.toString()
-            txvBidRate.text = bidRate.toString()
+            txvBidRate.text = String.format("%.3f", bidRate)
             txvCallToAction.text = callToAction
         }
     }
@@ -77,6 +77,36 @@ class AppDetailFragment : Fragment() {
         txvProductName.transitionName = name + AppConstants.TRANS_SUFFIX
         val act = activity as MainActivity
         val t = act.mTypefaceThin
+
+        txvAvgRatingImgUrlLabel_0.typeface = t
+        txvClickProxyUrlLabel_1.typeface = t
+        txvImpressionTrackingUrlLabel_2.typeface = t
+        txvProductNameLabel_3.typeface = t
+        txvCategoryLabel_4.typeface = t
+
+        txvProductIdLabel_5.typeface = t
+        txvCampaignIdLabel_6.typeface = t
+        txvCampaignTypeIdLabel_7.typeface = t
+        txvCreativeIdLabel_8.typeface = t
+        txvBillingTypeIdLabel_9.typeface = t
+
+        txvCampaignDisplayOrderLabel_10.typeface = t
+        txvIsRandomPickLabel_11.typeface = t
+        txvHomeScreenLabel_12.typeface = t
+        txvRatingLabel_13.typeface = t
+        txvDetailsLabel_14.typeface = t
+
+        txvNumberOfRatingsLabel_15.typeface = t
+        txvBidRateLabel_16.typeface = t
+        txvCallToAction.typeface = t
+
+        txvProductName.typeface = t
+        txvDetails.typeface = t
+        txvRating.typeface = t
+        txvCategory.typeface = t
+        txvProductId.typeface = t
+        txvProductId.typeface = t
+
         txvAvgRatingImgUrl.typeface = t
         txvClickProxyUrl.typeface = t
         txvImpressionTrackingUrl.typeface = t
@@ -98,12 +128,6 @@ class AppDetailFragment : Fragment() {
         txvNumberOfRatings.typeface = t
         txvBidRate.typeface = t
         txvCallToAction.typeface = t
-        txvProductName.typeface = t
-        txvDetails.typeface = t
-        txvRating.typeface = t
-        txvCategory.typeface = t
-        txvProductId.typeface = t
-        txvProductId.typeface = t
 
         imvClose.setOnClickListener {
             mAct?.run {

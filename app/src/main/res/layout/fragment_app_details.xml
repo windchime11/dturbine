@@ -39,7 +39,7 @@
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="0dp"
             android:layout_marginRight="0dp"
             android:background="@drawable/bg_rect_white"
@@ -72,435 +72,440 @@
                             fresco:actualImageScaleType="centerInside"/>
                     <LinearLayout android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
-                                  android:orientation="horizontal">
-                        <TextView
-                                android:id="@+id/txvAvgRatingImgUrlLabel_0"
-                                android:layout_width="0dp"
-                                android:layout_weight="0.7"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
-                                android:text="AvgRatingImgUrl: "
-                                android:textSize="18sp"
-                                android:textColor="@color/colorGray_100"/>
-                        <TextView
-                                android:id="@+id/txvAvgRatingImgUrl"
-                                android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
-                                android:text="-"
-                                android:textSize="18sp"
-                                android:textColor="@color/colorGreen_20"/>
-                    </LinearLayout>
-                    <LinearLayout android:layout_width="match_parent"
-                                  android:layout_height="wrap_content"
-                                  android:orientation="horizontal">
-                        <TextView
-                                android:id="@+id/txvClickProxyUrlLabel_1"
-                                android:layout_width="0dp"
-                                android:layout_weight="0.7"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
-                                android:text="clickProxyUrl: "
-                                android:textSize="18sp"
-                                android:textColor="@color/colorGray_100"/>
-                        <TextView
-                                android:id="@+id/txvClickProxyUrl"
-                                android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
-                                android:text="-"
-                                android:textSize="18sp"
-                                android:textColor="@color/colorGreen_20"/>
-                    </LinearLayout>
-                    <LinearLayout android:layout_width="match_parent"
-                                  android:layout_height="wrap_content"
-                                  android:orientation="horizontal">
-                        <TextView
-                                android:id="@+id/txvImpressionTrackingUrlLabel_2"
-                                android:layout_width="0dp"
-                                android:layout_weight="0.7"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
-                                android:text="ImpressionTrackingURL: "
-                                android:textSize="18sp"
-                                android:textColor="@color/colorGray_100"/>
-                        <TextView
-                                android:id="@+id/txvImpressionTrackingUrl"
-                                android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
-                                android:text="-"
-                                android:textSize="18sp"
-                                android:textColor="@color/colorGreen_20"/>
-                    </LinearLayout>
-                    <LinearLayout android:layout_width="match_parent"
-                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_marginBottom="5dp"
                                   android:orientation="horizontal">
                         <TextView
                                 android:id="@+id/txvProductNameLabel_3"
                                 android:layout_width="0dp"
-                                android:layout_weight="0.7"
+                                android:layout_weight="0.85"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
+                                android:layout_gravity="left|center_vertical"
                                 android:text="Product Name: "
-                                android:textSize="18sp"
+                                android:textSize="@dimen/label_font_size"
                                 android:textColor="@color/colorGray_100"/>
                         <TextView
                                 android:id="@+id/txvProductName"
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
+                                android:layout_gravity="left|center_vertical"
                                 android:text="-"
-                                android:textSize="18sp"
+                                android:textSize="@dimen/label_font_size"
                                 android:textColor="@color/colorGray_90"/>
                     </LinearLayout>
                     <LinearLayout android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_marginBottom="5dp"
                                   android:orientation="horizontal">
                         <TextView
                                 android:id="@+id/txvCategoryLabel_4"
                                 android:layout_width="0dp"
-                                android:layout_weight="0.7"
+                                android:layout_weight="0.85"
+                                android:layout_gravity="left|center_vertical"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:text="Category: "
-                                android:textSize="18sp"
+                                android:textSize="@dimen/label_font_size"
                                 android:textColor="@color/colorGray_100"/>
                         <TextView
                                 android:id="@+id/txvCategory"
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
+                                android:layout_gravity="left|center_vertical"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:text="-"
-                                android:textSize="16sp"
+                                android:textSize="@dimen/label_font_size"
                                 android:textColor="@color/colorGray_90"/>
                     </LinearLayout>
                     <LinearLayout android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_marginBottom="5dp"
                                   android:orientation="horizontal">
                         <TextView
                                 android:id="@+id/txvProductIdLabel_5"
                                 android:layout_width="0dp"
-                                android:layout_weight="0.7"
+                                android:layout_weight="0.85"
+                                android:layout_gravity="left|center_vertical"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:text="Product Id: "
-                                android:textSize="18sp"
+                                android:textSize="@dimen/label_font_size"
                                 android:textColor="@color/colorGray_100"/>
                         <TextView
                                 android:id="@+id/txvProductId"
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
+                                android:layout_gravity="left|center_vertical"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:text="-"
-                                android:textSize="14sp"
-                                android:textColor="@color/colorGray_50"/>
+                                android:textSize="@dimen/info_font_size"
+                                android:textColor="@color/colorGray_90"/>
                     </LinearLayout>
                     <LinearLayout android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_marginBottom="5dp"
                                   android:orientation="horizontal">
                         <TextView
                                 android:id="@+id/txvCampaignIdLabel_6"
                                 android:layout_width="0dp"
-                                android:layout_weight="0.7"
+                                android:layout_weight="0.85"
+                                android:layout_gravity="left|center_vertical"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:text="Campaign Id: "
-                                android:textSize="18sp"
+                                android:textSize="@dimen/label_font_size"
                                 android:textColor="@color/colorGray_100"/>
                         <TextView
                                 android:id="@+id/txvCampaignId"
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
+                                android:layout_gravity="left|center_vertical"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:text="-"
-                                android:textSize="14sp"
-                                android:textColor="@color/colorGray_50"/>
+                                android:textSize="@dimen/info_font_size"
+                                android:textColor="@color/colorGray_90"/>
                     </LinearLayout>
                     <LinearLayout android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_marginBottom="5dp"
                                   android:orientation="horizontal">
                         <TextView
                                 android:id="@+id/txvCampaignTypeIdLabel_7"
                                 android:layout_width="0dp"
-                                android:layout_weight="0.7"
+                                android:layout_weight="0.85"
+                                android:layout_gravity="left|center_vertical"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:text="Campaign Type Id: "
-                                android:textSize="18sp"
+                                android:textSize="@dimen/label_font_size"
                                 android:textColor="@color/colorGray_100"/>
                         <TextView
                                 android:id="@+id/txvCampaignTypeId"
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
+                                android:layout_gravity="left|center_vertical"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:text="-"
-                                android:textSize="14sp"
-                                android:textColor="@color/colorGray_50"/>
+                                android:textSize="@dimen/info_font_size"
+                                android:textColor="@color/colorGray_90"/>
                     </LinearLayout>
                     <LinearLayout android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_marginBottom="5dp"
                                   android:orientation="horizontal">
                         <TextView
                                 android:id="@+id/txvCreativeIdLabel_8"
                                 android:layout_width="0dp"
-                                android:layout_weight="0.7"
+                                android:layout_weight="0.85"
+                                android:layout_gravity="left|center_vertical"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:text="Creative Id: "
-                                android:textSize="18sp"
+                                android:textSize="@dimen/label_font_size"
                                 android:textColor="@color/colorGray_100"/>
                         <TextView
                                 android:id="@+id/txvCreativeId"
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
+                                android:layout_gravity="left|center_vertical"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
                                 android:layout_marginBottom="5dp"
                                 android:text="-"
-                                android:textSize="14sp"
-                                android:textColor="@color/colorGray_50"/>
+                                android:textSize="@dimen/info_font_size"
+                                android:textColor="@color/colorGray_90"/>
                     </LinearLayout>
                     <LinearLayout android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_marginBottom="5dp"
                                   android:orientation="horizontal">
                         <TextView
                                 android:id="@+id/txvBillingTypeIdLabel_9"
                                 android:layout_width="0dp"
-                                android:layout_weight="0.7"
+                                android:layout_weight="0.85"
+                                android:layout_gravity="left|center_vertical"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:text="Billing Type Id: "
-                                android:textSize="18sp"
+                                android:textSize="@dimen/label_font_size"
                                 android:textColor="@color/colorGray_100"/>
                         <TextView
                                 android:id="@+id/txvBillingTypeId"
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
+                                android:layout_gravity="left|center_vertical"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:text="-"
-                                android:textSize="14sp"
-                                android:textColor="@color/colorGray_50"/>
+                                android:textSize="@dimen/info_font_size"
+                                android:textColor="@color/colorGray_90"/>
                     </LinearLayout>
                     <LinearLayout android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_marginBottom="5dp"
                                   android:orientation="horizontal">
                         <TextView
                                 android:id="@+id/txvCampaignDisplayOrderLabel_10"
                                 android:layout_width="0dp"
-                                android:layout_weight="0.7"
+                                android:layout_weight="0.85"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:text="Campaign Display Order: "
-                                android:textSize="18sp"
+                                android:textSize="@dimen/label_font_size"
                                 android:textColor="@color/colorGray_100"/>
                         <TextView
                                 android:id="@+id/txvCampaignDisplayOrder"
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
+                                android:layout_gravity="left|center_vertical"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:text="-"
-                                android:textSize="14sp"
-                                android:textColor="@color/colorGray_50"/>
+                                android:textSize="@dimen/info_font_size"
+                                android:textColor="@color/colorGray_90"/>
                     </LinearLayout>
                     <LinearLayout android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_marginBottom="5dp"
                                   android:orientation="horizontal">
                         <TextView
                                 android:id="@+id/txvIsRandomPickLabel_11"
                                 android:layout_width="0dp"
-                                android:layout_weight="0.7"
+                                android:layout_weight="0.85"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:text="Is Random Pick? "
-                                android:textSize="18sp"
+                                android:textSize="@dimen/label_font_size"
                                 android:textColor="@color/colorGray_100"/>
                         <TextView
                                 android:id="@+id/txvIsRandomPick"
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:text="-"
-                                android:textSize="14sp"
-                                android:textColor="@color/colorGray_50"/>
+                                android:textSize="@dimen/info_font_size"
+                                android:textColor="@color/colorGray_90"/>
                     </LinearLayout>
                     <LinearLayout android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_marginBottom="5dp"
                                   android:orientation="horizontal">
                         <TextView
                                 android:id="@+id/txvHomeScreenLabel_12"
                                 android:layout_width="0dp"
-                                android:layout_weight="0.7"
+                                android:layout_weight="0.85"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:text="Home Screen? "
-                                android:textSize="18sp"
+                                android:textSize="@dimen/label_font_size"
                                 android:textColor="@color/colorGray_100"/>
                         <TextView
                                 android:id="@+id/txvHomeScreen"
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:text="-"
-                                android:textSize="14sp"
-                                android:textColor="@color/colorGray_50"/>
+                                android:textSize="@dimen/info_font_size"
+                                android:textColor="@color/colorGray_90"/>
                     </LinearLayout>
                     <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="32dp"
-                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
                             android:layout_marginBottom="5dp"
                             android:orientation="horizontal">
                         <TextView
                                 android:id="@+id/txvRatingLabel_13"
                                 android:layout_width="0dp"
-                                android:layout_weight="0.7"
+                                android:layout_weight="0.85"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:text="Rating: "
-                                android:textSize="18sp"
+                                android:textSize="@dimen/label_font_size"
                                 android:textColor="@color/colorGray_100"/>
-                        <TextView
-                                android:id="@+id/txvRating"
+                        <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:layout_height="match_parent"
-                                android:text="4.55"
-                                android:layout_marginLeft="4dp"
-                                android:layout_marginTop="2dp"
-                                android:gravity="left"
-                                android:textSize="13sp"
-                                android:textColor="@color/colorGray_90"/>
-                        <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/star_black"
-                                android:gravity="center_vertical"
-                                android:tint="@color/colorGray_90"/>
+                                android:orientation="horizontal">
+                            <TextView
+                                    android:id="@+id/txvRating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="4.55"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginTop="2dp"
+                                    android:gravity="left|center_vertical"
+                                    android:textSize="@dimen/info_font_size"
+                                    android:textColor="@color/colorGray_90"/>
+                            <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/star_black"
+                                    android:gravity="center_vertical"
+                                    android:tint="@color/colorGray_90"/>
+
+                        </LinearLayout>
                     </LinearLayout>
                     <LinearLayout android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_marginBottom="5dp"
                                   android:orientation="horizontal">
                         <TextView
                                 android:id="@+id/txvDetailsLabel_14"
                                 android:layout_width="0dp"
-                                android:layout_weight="0.7"
+                                android:layout_weight="0.85"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
                                 android:text="Details: "
-                                android:textSize="18sp"
+                                android:textSize="@dimen/label_font_size"
                                 android:textColor="@color/colorGray_100"/>
                         <TextView
                                 android:id="@+id/txvDetails"
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="15dp"
                                 android:text="-"
-                                android:textSize="15sp"
+                                android:textSize="@dimen/info_font_size"
                                 android:textColor="@color/colorGray_90"/>
                     </LinearLayout>
                     <LinearLayout android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_marginBottom="5dp"
                                   android:orientation="horizontal">
                         <TextView
                                 android:id="@+id/txvNumberOfRatingsLabel_15"
                                 android:layout_width="0dp"
-                                android:layout_weight="0.7"
+                                android:layout_weight="0.85"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
+                                android:layout_gravity="left|center_vertical"
                                 android:text="Number of Ratings: "
-                                android:textSize="18sp"
+                                android:textSize="@dimen/label_font_size"
                                 android:textColor="@color/colorGray_100"/>
                         <TextView
                                 android:id="@+id/txvNumberOfRatings"
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
+                                android:layout_gravity="left|center_vertical"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="15dp"
                                 android:text="-"
-                                android:textSize="15sp"
+                                android:textSize="@dimen/info_font_size"
                                 android:textColor="@color/colorGray_90"/>
                     </LinearLayout>
                     <LinearLayout android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_marginBottom="5dp"
                                   android:orientation="horizontal">
                         <TextView
                                 android:id="@+id/txvBidRateLabel_16"
                                 android:layout_width="0dp"
-                                android:layout_weight="0.7"
+                                android:layout_weight="0.85"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
+                                android:layout_gravity="left|center_vertical"
                                 android:text="bid Rate: "
-                                android:textSize="18sp"
+                                android:textSize="@dimen/label_font_size"
                                 android:textColor="@color/colorGray_100"/>
                         <TextView
                                 android:id="@+id/txvBidRate"
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
+                                android:layout_gravity="left|center_vertical"
                                 android:text="-"
-                                android:textSize="16sp"
+                                android:textSize="@dimen/info_font_size"
                                 android:textColor="@color/colorGray_90"/>
                     </LinearLayout>
                     <LinearLayout android:layout_width="match_parent"
                                   android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_marginBottom="5dp"
                                   android:orientation="horizontal">
                         <TextView
-                                android:id="@+id/txvCallToAction"
-                                android:layout_width="match_parent"
+                                android:id="@+id/txvCallToActionLabel"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.85"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="15dp"
+                                android:text="Call To Action:"
+                                android:textSize="@dimen/info_font_size"
+                                android:textColor="@color/colorGray_100"/>
+                        <TextView
+                                android:id="@+id/txvCallToAction"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left|center_vertical"
                                 android:text="-"
-                                android:textSize="15sp"
+                                android:textSize="@dimen/info_font_size"
                                 android:textColor="@color/colorGray_90"/>
                     </LinearLayout>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_marginBottom="5dp"
+                                  android:orientation="horizontal">
+                        <TextView
+                                android:id="@+id/txvAvgRatingImgUrlLabel_0"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.85"
+                                android:layout_height="wrap_content"
+                                android:text="averageRatingImageURL: "
+                                android:textSize="@dimen/label_font_size"
+                                android:textColor="@color/colorGray_100"/>
+                        <TextView
+                                android:id="@+id/txvAvgRatingImgUrl"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="@dimen/info_font_size"
+                                android:textColor="@color/colorGray_90"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_marginBottom="5dp"
+                                  android:orientation="horizontal">
+                        <TextView
+                                android:id="@+id/txvClickProxyUrlLabel_1"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.85"
+                                android:layout_height="wrap_content"
+                                android:text="clickProxyUrl: "
+                                android:textSize="@dimen/label_font_size"
+                                android:textColor="@color/colorGray_100"/>
+                        <TextView
+                                android:id="@+id/txvClickProxyUrl"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="@dimen/info_font_size"
+                                android:textColor="@color/colorGray_90"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_marginBottom="5dp"
+                                  android:orientation="horizontal">
+                        <TextView
+                                android:id="@+id/txvImpressionTrackingUrlLabel_2"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.85"
+                                android:layout_height="wrap_content"
+                                android:text="ImpressionTrackingURL: "
+                                android:textSize="@dimen/label_font_size"
+                                android:textColor="@color/colorGray_100"/>
+                        <TextView
+                                android:id="@+id/txvImpressionTrackingUrl"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="@dimen/info_font_size"
+                                android:textColor="@color/colorGray_90"/>
+                    </LinearLayout>
+
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
