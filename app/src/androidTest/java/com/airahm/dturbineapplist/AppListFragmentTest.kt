@@ -29,7 +29,7 @@ class AppListFragmentTest {
     }
 
     @Test
-    fun testShowUsers() {
+    fun testClickingRecyclerViewItem() {
         Espresso.onView(ViewMatchers.withId(R.id.recyclerView))
             .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
             .perform(
